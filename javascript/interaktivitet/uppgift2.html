@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="kontainer">
+        <button onclick="namn()">Ange namn</button>
+        <button onclick="angeadress()">Ange Adress</button>
+    </div>
+
+    <script>
+        var namn;
+        function namn() {
+            namn = prompt("Vad heter du?");
+            alert("Du heter " + namn);
+        }
+        var adress;
+        function angeadress() {
+            adress = prompt("Vart bor du?");
+            alert("Här bor du " + adress);
+        }
+    </script>
+</body>
+</html>

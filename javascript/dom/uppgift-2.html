@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tränar på DOM</h1>
+        <button onclick="mörk()">Mörk</button>
+        <button onclick="ljus()">Ljus</button>
+    </div>
+    
+    <script>
+        function mörk() {
+            document.body.style.cssText = "background: black;"
+
+        }
+
+        function ljus() {
+            document.body.style.cssText = "background: white;"
+        }
+    </script>
+</body>
+</html>

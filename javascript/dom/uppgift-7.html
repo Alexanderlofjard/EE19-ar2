@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tränar på DOM</h1>
+        <button onclick="förstaKnapp()">Klicka för ny knapp</button>
+    </div>
+
+    <script>
+        function förstaKnapp() {
+          document.body.innerHTML = "<h1>Tränar på DOM</h1>"  
+          document.body.innerHTML = "<button onclick=\"andraKnapp\">Ändra på hemsidan</button>"
+
+        }
+        function andraKnapp() {
+
+            document.body.style.cssText = "background: black, color; white;"
+            
+        }
+    </script>
+</body>
+</html>
