@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Slutbetyg</h1>
+        <button onclick="slutbetyg()">Gissa Slutbetyg</button>
+    </div>
+    <script>
+        function slutbetyg() {
+            // Slutbetyg: F, E, D, C, B, A
+            // Slumpa fram ett tal
+            var slumptal = Math.floor(math.random() * 6);
+            alert("slumptal = " + slumptal);
+            if (slumptal == 0) {
+                alert("Du får Slutbetyg F 🤑");
+            }
+            if (slumptal == 1) {
+                alert("DU får slutbetyg E 🙄");
+            }
+            if (slumptal == 2) {
+                alert("Du får slutbetyg D 🥳");
+            
+            } if (slumptal == 3) {
+                alert("Du får slutbetyg C 😲");
+
+            } if (slumptal == 4) {
+                alert("Du får slutbetyg B 👌");
+
+            } if (slumptal == 5) {
+                alert("Du får slutbetyg A 😍");
+            }
+        }
+    </script>
+</body>
+</html>

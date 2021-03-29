@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Läsa från sidan</h1>
+
+        <h2>Input</h2>
+        <label>Ange förnamn <input class= "fnamn" type="text"></label>
+        <label>Ange efternamn <input type="enamn"></label>
+        <button onclick="läsa()">Skickat</button>
+    </div>
+    <script>
+    function läsa() {
+   const eInput = document.querySelector(".fnamn");  
+   const eInput = document.querySelector(".enamn");  
+   console.log(eInput);
+
+   var fnamn = eInput.value;
+   console.log(fnamn);  
+    }
+    </script>
+</body>
+</html>
