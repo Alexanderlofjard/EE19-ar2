@@ -1,0 +1,33 @@
+body {
+    background: #ebebeb;
+    width: 800px;
+    height: 1000px;
+    /* Lägg webbsidan i mitten */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Ram på body */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7c7c7c;
+    
+    /* Avstånd till innehåll */
+    padding: 20px;
+}
+
+h1 {
+    color: green;
+    font-weight: 100;
+    font-family: Arial;
+    font-size: 34px;
+
+
+}
+
+p{
+    font-family: arial;
+    font-size: 14px;
+    line-height: 150;
+
+
+}

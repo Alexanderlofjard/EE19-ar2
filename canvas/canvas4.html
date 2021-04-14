@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        const ritYta = document.querySelector("canvas");
+
+        ritYta.width = 800;
+        ritYta.height = 600;
+
+        var ctx = ritYta.getContext("2d");
+
+
+        //rita en svensk flagga
+
+        ctx.beginPath();
+        ctx.lineWidth = 10;
+        ctx.moveTo(100, 500);
+        ctx.lineTo(100, 200);
+        ctx.lineTo(300, 100);
+        ctx.lineTo(500, 200);
+        ctx.lineTo(100, 200);
+        ctx.moveTo(500, 200);
+        ctx.lineTo(500, 500);
+        ctx.lineTo(350, 500);
+        ctx.lineTo(350, 300);
+        ctx.lineTo(250, 300);
+        ctx.lineTo(250, 500);
+        ctx.lineTo(100, 500)
+        ctx.stroke();
+
+
+
+    </script>
+</body>
+</html>
