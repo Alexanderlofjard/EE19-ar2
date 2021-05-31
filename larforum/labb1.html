@@ -3,56 +3,36 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Variabler och funktioner</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="rep.css">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="kontainer">
-        <h1>Variabler och funktioner</h1>
-        <label>Namn <input type="text" class="namn"></label>
-        <label>Ålder <input type="text" class="ålder"></label>
-        <label>Pinkod <input type="password" class="pinkod"></label>
-        <button class="btn btn-primary">Skicka</button>
+        <h1>Läsa av input-rutor</h1>
+        <h2>Input</h2>
+        <label>Ange förnamn <input class="fnamn" type="text"></label>
+        <label>Ange Efternamn <input class="enamn" type="text"></label>
+        <button>Skicka</button>
+        <h2>Output</h2>
         <label>Svar <textarea></textarea></label>
     </div>
     <script>
-        // Koden som körs först
-        // Element som vi behöver komma åt
-        const rutaAnamn = document.querySelector(".namn");
-        const rutaÅlder = document.querySelector(".ålder");
-        const rutaPinkod = document.querySelector(".pinkod");
-        const knapp = document.querySelector("button");
-        const svarsRuta = document.querySelector("textarea");
+        // Connecta till elemnten
+        const rutaFnamn = document.querySelector(".fnamn")
+        const rutaEnamn = document.querySelector(".input")
+        const knappen = document.querySelector("button")
+        const rutaSvar = document.querySelector("textarea")
 
-        //Läsa av vad som står i namnruta
-        var namn = rutaAnamn.value;
-        console.log("Namn =", namn);
+        // När man klickar på knappen 
+        knappen.addEventListener("click", function () {
+           console.log("Du klickade på knappen"); 
+           console.log(rutaFnamn.value);
+        knappen.addEventListener("click", function () {
+           console.log("Du klickade på knappen"); 
+           console.log(rutaEnamn.value);
 
-        //Kod som körs efter jag klickat på knappen
-        knapp.addEventListener("click", function () {
-            var namn = rutaAnamn.value;
-            var ålder = rutaÅlder.value
-            console.log("Namn =", namn, "ålder =", ålder);
-            console.log(namn + "är" + ålder + "år gammal");
-
-            //Läs av pinkoden och skriv ut i loggen
-            var pinkod = rutaPinkod.value;
-            console.log("pinkod", pinkod);
-
-            //
-            if (pinkod == 789) {
-                svarsRuta.value = namn + " är " + ålder + " år gammal "
-            } else {
-                svarsRuta.value = "Fel pinkod!";
-            }
-
-            //Skriv i svarsrutan
-
+           rutaSvar.value = "Hej hej " + rutaFnamn.value + rutaEnamn.value + " Hur mår du?";
         });
-
-        console.log("Sista raden");
     </script>
 </body>
 </html>

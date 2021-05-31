@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+<canvas></canvas>
+<script>
+    // Hitta elementet
+    const rityta = document.querySelector("canvas");
+
+    // Ställer in storleken
+    rityta.width = 800;
+    rityta.height = 600;
+
+    // Sätt på ritmotorn
+    var ctx = rityta.getContext("2d");
+
+    // Rita en fyrkant
+    //ctx.strokeRect(100, 100, 200, 200);
+
+    //Rita en fylld rektangel
+    //ctx.fillRect(400, 100, 200, 200);
+
+    // Rita hänga gubbe
+    //Rita marken
+    ctx.beginPath
+
+    // Marken
+    ctx.lineWidth = 10;
+    ctx.strokeStyle = "lightgreen"
+    ctx.moveTo(0, 500);
+    ctx.lineTo(800, 500);
+    ctx.stroke();
+   
+    //Pålen
+    ctx.strokeStyle = "brown";
+    ctx.lineWidth = 5;
+    ctx.moveTo(200, 500);
+    ctx.lineTo(200, 100);
+    ctx.stroke();
+
+    //Balken
+    ctx.lineTo(600, 100);
+    ctx.stroke();
+
+    //Repet
+    ctx.lineTo(600, 200);
+    ctx.stroke();
+
+    //Huvudet
+    ctx.moveTo(650, 250);
+    ctx.arc(600, 250, 50, 0, 6.28);
+    ctx.stroke();
+
+    //Kroppen
+    ctx.moveTo(600, 300);
+    ctx.lineTo(600, 450);
+    ctx.stroke();
+
+    //Armarna
+    ctx.moveTo(600, 350);
+    ctx.lineTo(550, 400);
+    ctx.stroke();
+
+    ctx.moveTo(600, 350);
+    ctx.lineTo(650, 400);
+    ctx.stroke();
+
+    //Benen
+    ctx.moveTo(600, 450);
+    ctx.lineTo(650, 500);
+    ctx.stroke();
+    ctx.moveTo(600, 450);
+    ctx.lineTo(550, 500);
+    ctx.stroke();
+</script>
+</body>
+</html>

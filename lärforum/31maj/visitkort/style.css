@@ -1,0 +1,41 @@
+/* Enkel CSS-reset */
+html {
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+  
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(186, 196, 201);
+}
+div {
+background: url("./bilder/kelly-sikkema-VpcSDucAYjw-unsplash.jpg");
+width: 600px;
+height: 400px;
+border-radius: 10px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+padding-top: 250px;
+padding-left: 400px;
+color: white;
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
