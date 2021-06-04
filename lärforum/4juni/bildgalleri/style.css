@@ -1,0 +1,82 @@
+/* Enkel CSS-reset */
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Odibee+Sans&display=swap');
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("./bilder/federico-bottos-Z3NceSeZqgI-unsplash.jpg");
+    background-attachment: fixed;
+}
+
+div.sida {
+    width: 800px;
+    background: rgba(4, 133, 53, 0.363);
+    margin: 0 auto 0 auto;
+    padding: 45px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 25px;
+    box-shadow: -5px -10px 10px black;
+}
+
+h1 {
+    font-family: 'Mate SC', serif;
+    font-size: 100px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Mate SC', serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+div.info {
+    background: rgba(4, 122, 33, 0.493);
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 25px;
+    box-shadow: -5px -10px 10px black;
+
+}
+
+img {
+    width: 400px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 10px;
+}
+
+p {
+    font-family: 'Odibee Sans', cursive;
+}
+hr {
+    clear:both;
+    visibility: hidden;
+}
+div.loffe {
+    color: chartreuse;
+    font-size: 50px;
+    background: rgba(0, 0, 0, 0.205);
+}
