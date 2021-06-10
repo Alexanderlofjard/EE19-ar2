@@ -1,0 +1,50 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+background: url(./bilder/bg.svg);
+font-family: sans-serif;
+}
+div.kontainer {
+width: 90%;
+margin: auto;
+}
+h1 {
+text-align: center;
+color: red;
+padding: 5px;
+margin: 10px;
+}
+h2 {
+text-align: center;
+padding: 5px;
+margin-bottom: 10px;
+}
+div.box {
+background: #fff;
+border-radius: 0 0 15px 15px;
+}
+h3 {
+text-align: center;
+}
+p {
+margin: 5px;
+padding: 15px;
+}
+img {
+width: 100%;
+border-radius: 15px 15px 0 0;
+}
+div.kolumner {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
