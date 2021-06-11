@@ -1,5 +1,5 @@
 /* Enkel CSS-reset */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&family=Teko:wght&Baloo+Tammudu+2@300&display=swap');
 
 html {
     box-sizing: border-box;
@@ -55,6 +55,7 @@ nav {
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 10px;
+    box-shadow: -5px -10px 0 0;
 }
 
 ul {}
@@ -70,6 +71,9 @@ a {
     font-size: 25px;
     padding: 10px;
 }
+a.active {
+    color: black;
+}
 
 main {
     background: #fff;
@@ -84,9 +88,14 @@ h3 {
     font-size: 30px;
 }
 
-p {}
+p {
+    color: rgb(92, 115, 180);
+    font-family: 'Baloo Tammudu 2', cursive;
+}
 
 img {
-    width: 300px;
-    border: 10px solid rgb(92, 115, 180);
+    width: 150px;
+    border: 5px solid rgb(92, 115, 180);
+    box-shadow: -5px -5px 0 0;
+
 }
